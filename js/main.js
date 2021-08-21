@@ -1,6 +1,7 @@
 // your javascript here
 
 const onApprove = (data, actions) => {
+  
     // This function captures the funds from the transaction.
     return actions.order.capture().then(function (details) {
         // This is where you would save the order to firebase and pouchdb
@@ -9,6 +10,7 @@ const onApprove = (data, actions) => {
     });
 }
 
+//SB_CLIENT_ID=AU54NHQzoBRSGP44vkXtK_o3dtdccvWPb1xln6FDodLsHN4EWfrEpkIyTyv9d1sXMP-vNplDgliaP0ym
 
 $(document).ready(() => {
     const aPaypalButtons = $(".paypal_button");
